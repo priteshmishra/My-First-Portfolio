@@ -1,0 +1,33 @@
+HEADER    SMALL MOLECULE                          15-JAN-90   CAFF
+TITLE     CAFFEINE (1,3,7-TRIMETHYLXANTHINE) C8H10N4O2
+COMPND    MOL_ID: 1; MOLECULE: CAFFEINE; CHAIN: A
+AUTHOR    BIOVERSE CHEMICAL CATALOG
+ATOM      1  N1  CAF A   1      -1.077   0.771   0.000  1.00 20.00           N
+ATOM      2  C2  CAF A   1      -0.008   1.624   0.000  1.00 20.00           C
+ATOM      3  O2  CAF A   1       0.038   2.842   0.000  1.00 20.00           O
+ATOM      4  N3  CAF A   1       1.196   0.933   0.000  1.00 20.00           N
+ATOM      5  C4  CAF A   1       1.353  -0.428   0.000  1.00 20.00           C
+ATOM      6  C5  CAF A   1       0.264  -1.321   0.000  1.00 20.00           C
+ATOM      7  C6  CAF A   1      -1.066  -0.655   0.000  1.00 20.00           C
+ATOM      8  O6  CAF A   1      -2.128  -1.258   0.000  1.00 20.00           O
+ATOM      9  N7  CAF A   1       0.737  -2.610   0.000  1.00 20.00           N
+ATOM      10 C8  CAF A   1       2.059  -2.484   0.000  1.00 20.00           C
+ATOM      11 N9  CAF A   1       2.489  -1.189   0.000  1.00 20.00           N
+ATOM      12 C10 CAF A   1      -2.413   1.358   0.000  1.00 20.00           C
+ATOM      13 C11 CAF A   1       2.404   1.745   0.000  1.00 20.00           C
+ATOM      14 C12 CAF A   1      -0.229  -3.693   0.000  1.00 20.00           C
+CONECT    1    2    6   12
+CONECT    2    1    3    4
+CONECT    3    2
+CONECT    4    2    5   13
+CONECT    5    4    6   11
+CONECT    6    5    7    9
+CONECT    7    1    6    8
+CONECT    8    7
+CONECT    9    6   10   14
+CONECT   10    9   11
+CONECT   11    5   10
+CONECT   12    1
+CONECT   13    4
+CONECT   14    9
+END
