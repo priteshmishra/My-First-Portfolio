@@ -5,42 +5,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        space: {
-          950: '#030712',
-          900: '#070c18',
-          850: '#0b1325',
-          800: '#0f172a',
-          700: '#1e293b',
-        },
         bio: {
-          cyan: '#00f0ff',
-          teal: '#14b8a6',
-          violet: '#8b5cf6',
-          purple: '#a855f7',
-          pink: '#ec4899',
-          amber: '#f59e0b',
+          bg: 'var(--color-bg)',
+          surface: 'var(--color-surface)',
+          secondary: 'var(--color-secondary)',
+          text: 'var(--color-text)',
+          muted: 'var(--color-muted)',
+          cyan: 'var(--color-cyan)',
+          'cyan-dark': 'var(--color-cyan-dark)',
+          violet: 'var(--color-violet)',
+          border: 'var(--color-border)',
+          lab: 'var(--color-lab-bg)',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'monospace'],
+      },
+      boxShadow: {
+        'soft': '0 2px 10px rgba(32, 41, 56, 0.04), 0 1px 3px rgba(32, 41, 56, 0.02)',
+        'card': '0 4px 20px -2px rgba(32, 41, 56, 0.06), 0 2px 6px -1px rgba(32, 41, 56, 0.04)',
+        'card-hover': '0 12px 30px -4px rgba(0, 188, 212, 0.12), 0 4px 12px -2px rgba(32, 41, 56, 0.06)',
+        'glow-cyan': '0 0 24px -4px rgba(0, 188, 212, 0.3)',
       },
       animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float-slow': 'float 6s ease-in-out infinite',
-        'glow-pulse': 'glowPulse 3s ease-in-out infinite alternate',
+        'fade-in': 'fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        glowPulse: {
-          '0%': { boxShadow: '0 0 15px rgba(0, 240, 255, 0.2)' },
-          '100%': { boxShadow: '0 0 30px rgba(139, 92, 246, 0.4)' },
+        pulseSubtle: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.6' },
         },
       },
     },
   },
   plugins: [],
 };
+
