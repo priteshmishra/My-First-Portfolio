@@ -18,6 +18,7 @@ export interface ProfileData {
     value: string;
   }[];
   learningGoals: string[];
+  photoSrc: string;
   photoPlaceholder: {
     initials: string;
     label: string;
@@ -59,6 +60,7 @@ export const profileData: ProfileData = {
     'Explore fundamental bioinformatics algorithms for sequence alignment, motif discovery, and phylogenetic analysis.',
     'Learn principles of biomolecular structural visualization and open-source scientific software design.'
   ],
+  photoSrc: '/Priteh-profile.png',
   photoPlaceholder: {
     initials: 'PM',
     label: 'Student Profile',
