@@ -21,6 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#lab', label: 'Lab' },
+    { href: '#cv', label: 'CV' },
     { href: '#research', label: 'Research' },
     { href: '#contact', label: 'Contact' },
   ];
