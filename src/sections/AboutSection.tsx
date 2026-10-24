@@ -24,19 +24,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreProjects })
             <div className="glass-apple p-6 sm:p-7 space-y-6">
               {/* Profile Photo Component: Tasteful Initials Placeholder */}
               <div className="flex flex-col sm:flex-row items-center gap-5">
-                {/* Initials Placeholder Avatar */}
-                <div
-                  className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-br from-white/90 via-cyan-50/60 to-violet-50/60 dark:from-[#162030] dark:via-cyan-900/20 dark:to-violet-900/20 border-2 border-bio-cyan/40 flex flex-col items-center justify-center text-center shadow-card shrink-0 relative overflow-hidden group"
-                  aria-label="Profile photo placeholder with initials PM"
-                >
-                  <span className="text-2xl sm:text-3xl font-extrabold font-mono text-bio-cyan-dark tracking-wider">
-                    {profileData.photoPlaceholder.initials}
-                  </span>
-                  <span className="text-[10px] font-mono text-bio-muted uppercase mt-0.5">
-                    Profile
-                  </span>
-                  <div className="absolute bottom-0 right-0 w-4 h-4 bg-bio-cyan/30 rounded-tl-lg" />
-                </div>
+                {/* Real Profile Photo with BIOVERSE Glow */}
+<div className="relative h-24 w-24 sm:h-28 sm:w-28 rounded-2xl p-[2px] bg-gradient-to-br from-cyan-400 via-violet-500 to-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.3)]">
+  <img
+    src={profileData.photoSrc}
+    alt="Pritesh Kumar Mishra"
+    className="h-full w-full rounded-2xl object-cover"
+  />
+  <div className="absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-bio-cyan/30" />
+</div>
 
                 <div className="text-center sm:text-left">
                   <h3 className="text-xl font-bold text-bio-text">
