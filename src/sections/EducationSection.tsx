@@ -139,7 +139,7 @@ export const EducationSection: React.FC = () => {
           <span className="text-[10px] uppercase tracking-wider text-bio-cyan-dark font-bold">
             Class 10 · 2021
           </span>
-          <h5 className="text-sm font-bold">Jeewan Public School</h5>
+          <h5 className="text-sm font-bold">Jeewan Public School, Bihar</h5>
           <p className="text-xs text-bio-muted">Board: CBSE</p>
           <p className="text-sm font-semibold text-bio-cyan-dark">
             Percentage: 82%
@@ -150,7 +150,7 @@ export const EducationSection: React.FC = () => {
           <span className="text-[10px] uppercase tracking-wider text-bio-cyan-dark font-bold">
             Class 12 · 2023
           </span>
-          <h5 className="text-sm font-bold">Jeewan Public School</h5>
+          <h5 className="text-sm font-bold">Jeewan Public School, Bihar</h5>
           <p className="text-xs text-bio-muted">Board: CBSE</p>
           <p className="text-sm font-semibold text-bio-cyan-dark">
             Percentage: 80%
