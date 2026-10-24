@@ -12,6 +12,7 @@ import { ProjectsSection } from '../sections/ProjectsSection';
 import { LabSection } from '../sections/LabSection';
 import { ResearchSection } from '../sections/ResearchSection';
 import { ContactSection } from '../sections/ContactSection';
+import { CVSection } from '../portfolio/cvsection';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
 export const App: React.FC = () => {
@@ -20,7 +21,7 @@ export const App: React.FC = () => {
 
   // Track active section for navigation highlighting
   useEffect(() => {
-    const sectionIds = ['hero', 'about', 'education', 'skills', 'projects', 'lab', 'research', 'contact'];
+    const sectionIds = ['hero', 'about', 'education', 'skills', 'projects', 'lab', 'cv' 'research', 'contact'];
 
     const handleScroll = () => {
       const scrollPos = window.scrollY + 200;
