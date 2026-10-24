@@ -48,16 +48,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreProjects })
                 </div>
               </div>
 
-              {/* Photo replacement documentation notice */}
-              <div className="p-3.5 rounded-xl glass-apple-secondary text-[11px] text-slate-600 space-y-1">
-                <div className="flex items-center gap-1.5 font-mono text-slate-800 font-semibold">
-                  <Info className="w-3.5 h-3.5 text-bio-cyan-dark shrink-0" />
-                  <span>Replace Photo Placeholder:</span>
-                </div>
-                <p className="font-mono text-[10px] text-slate-500">
-                  {profileData.photoPlaceholder.instructions}
-                </p>
-              </div>
+              
 
               {/* Academic Identity Details Panel */}
               <div className="border-t border-slate-200/60 pt-4 space-y-2.5 text-xs">
