@@ -127,6 +127,38 @@ export const EducationSection: React.FC = () => {
             </div>
           </div>
         </Reveal>
+    {/* School Education */}
+    <div className="mt-8 space-y-4">
+      <h4 className="font-mono text-xs uppercase tracking-wider text-bio-muted font-bold flex items-center gap-2">
+        <GraduationCap className="w-4 h-4 text-bio-cyan-dark" />
+        <span>School Education</span>
+      </h4>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="p-4 rounded-xl glass-apple-secondary text-bio-text space-y-2">
+          <span className="text-[10px] uppercase tracking-wider text-bio-cyan-dark font-bold">
+            Class 10 · 2021
+          </span>
+          <h5 className="text-sm font-bold">Jeewan Public School</h5>
+          <p className="text-xs text-bio-muted">Board: CBSE</p>
+          <p className="text-sm font-semibold text-bio-cyan-dark">
+            Percentage: 82%
+          </p>
+        </div>
+
+        <div className="p-4 rounded-xl glass-apple-secondary text-bio-text space-y-2">
+          <span className="text-[10px] uppercase tracking-wider text-bio-cyan-dark font-bold">
+            Class 12 · 2023
+          </span>
+          <h5 className="text-sm font-bold">Jeewan Public School</h5>
+          <p className="text-xs text-bio-muted">Board: CBSE</p>
+          <p className="text-sm font-semibold text-bio-cyan-dark">
+            Percentage: 80%
+          </p>
+        </div>
+      </div>
+    </div>
+        
       </div>
     </section>
   );
