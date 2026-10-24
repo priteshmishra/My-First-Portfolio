@@ -78,7 +78,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </Reveal>
         </div>
 
-        {/* Right Column: Floating Interactive DNA Highlight Card */}
+        {/* Right Column: Floating Interactive DNA Highlight Card */}      {/* Profile Photo - BIOVERSE 3D Frame */}
+      <Reveal delayMs={100}>
+        <div className="mb-6 flex justify-center">
+          <div className="group relative w-full max-w-xs rounded-2xl p-[2px] bg-gradient-to-br from-cyan-400 via-violet-500 to-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.25)] transition-all duration-500 hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] hover:-translate-y-1">
+            <div className="rounded-2xl bg-slate-950 p-2">
+              <img
+                src="/Priteh-profile.png"
+                alt="Pritesh Mishra"
+                className="w-full aspect-[4/5] object-cover rounded-xl"
+              />
+              <p className="pt-3 pb-2 text-center font-mono text-xs tracking-widest text-cyan-300">
+                BIOVERSE · BIOTECHNOLOGY
+              </p>
+            </div>
+          </div>
+        </div>
+      </Reveal>
         <div className="lg:col-span-4 hidden lg:flex flex-col items-end">
           <Reveal delayMs={150}>
             <div className="glass-apple p-5 text-right max-w-xs space-y-2 shadow-soft hover:shadow-card transition-all">
